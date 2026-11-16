@@ -1,0 +1,52 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: rgb(191, 63, 84); 
+    text-align: center;
+    text-decoration: double underline;
+}
+
+h3{
+     text-align: center;
+ 
+     text-decoration: underline;
+}
+
+table{
+    margin: 0 auto;
+    background-color: rgb(219, 235, 244);
+    border: 1px solid black; 
+    border-collapse: collapse; 
+    text-align: center; 
+    width: 40%;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    font-family:  sans-serif;
+    
+}
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(191, 63, 84);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
