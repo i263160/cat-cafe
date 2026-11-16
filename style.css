@@ -40,7 +40,7 @@ main {
 h1 {
     color: rgb(191, 63, 84);
     text-align: center;
-    text-decoration: double underline;
+    text-decoration: underline;
 }
 
 h3 {
