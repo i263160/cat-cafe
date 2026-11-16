@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" type="text/css" href="style.css">
-    <br><title>Cafe menu</title>
+    <meta charset="UTF-8">
+    <title>MeowBakhsh Cafe - Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <script>
-    function popup() {
-        alert("Your order has been placed. Thank you for your order!");}
-    </script>
-   <h1>MeowBakhsh Cafe</h1> 
-   
 
-<h3>Menu</h3>
-<table>
-  <tr>
-    <th>Items</th>
-    <th>Category</th>
-    <th>Price</th>
-  </tr>
-  <tr>
-    <td>Meownuts </td>
-    <td>Dessert</td>
-    <td>$5.99</td>
-  </tr>
- <tr>
-    <td>Catpuccino</td>
-    <td>Beverage</td>
-    <td>$3.49</td>
-    </tr>
-<tr>
-    <td>Catpops</td>
-    <td>Candy</td>
-    <td>$3.49</td>
-    </tr>
+    <nav>
+        <a href="index.html" class="active">Menu</a>
+        <a href="order.html">Order Online</a>
+        <a href="cats.html">Meet Our Cats</a>
+    </nav>
 
-</table>
-<br><br>
-<img src="donuts.jpg" alt="cat themed donuts" width="400" height="275">
-<p>Meownuts  $5.99</p>
-<button onclick="popup()">Order Meownuts</button>
-<br><br>
-<img src="pops.jpg" alt="cat themed cakpops" width="400" height="275">
-<p>Catpops  $3.49</p>
-<button onclick="popup()">Order Catpops</button>
+    <main>
+        <h1>MeowBakhsh Cafe</h1>
+        <p>Purr-fect treats and cozy coffee crafted for cat lovers.</p>
+
+        <h3>Cafe Menu</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Meownuts</td>
+                    <td>Dessert</td>
+                    <td>$5.99</td>
+                </tr>
+                <tr>
+                    <td>Catpuccino</td>
+                    <td>Beverage</td>
+                    <td>$3.49</td>
+                </tr>
+                <tr>
+                    <td>Catpops</td>
+                    <td>Candy</td>
+                    <td>$3.49</td>
+                </tr>
+                <tr>
+                    <td>Paw-berry Cheesecake</td>
+                    <td>Dessert</td>
+                    <td>$6.49</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card-box">
+            <img src="donuts.jpg" alt="cat themed donuts" width="400" height="275">
+            <p><strong>Meownuts</strong> — $5.99</p>
+        </div>
+
+        <div class="card-box">
+            <img src="pops.jpg" alt="cat themed cakepops" width="400" height="275">
+            <p><strong>Catpops</strong> — $3.49</p>
+        </div>
+
+        <!-- Order Now button at the bottom that navigates to the order page -->
+        <a href="order.html" class="btn-link">Order Now</a>
+    </main>
+
+    <footer>
+        <p><strong>MeowBakhsh Cafe</strong> | F-7 Markaz, Islamabad</p>
+        <p>Created by Meerab (26i-3160) — IICT Lab Project</p>
+    </footer>
 
 </body>
 </html>
