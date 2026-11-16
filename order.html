@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MeowBakhsh Cafe - Place Order</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Menu</a>
+        <a href="order.html" class="active">Order Online</a>
+        <a href="cats.html">Meet Our Cats</a>
+    </nav>
+
+    <main>
+        <h1>MeowBakhsh Cafe</h1>
+        <h3>Select Your Treats &amp; Quantities</h3>
+        <p>Choose the quantity for each item you would like to order.</p>
+
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-name="Meownuts" data-price="5.99">
+                    <td>Meownuts</td>
+                    <td>Dessert</td>
+                    <td>$5.99</td>
+                    <td><input type="number" class="qty-input" min="0" max="20" value="0" onchange="updateTotals()" oninput="updateTotals()"></td>
+                    <td class="row-subtotal">$0.00</td>
+                </tr>
+                <tr data-name="Catpuccino" data-price="3.49">
+                    <td>Catpuccino</td>
+                    <td>Beverage</td>
+                    <td>$3.49</td>
+                    <td><input type="number" class="qty-input" min="0" max="20" value="0" onchange="updateTotals()" oninput="updateTotals()"></td>
+                    <td class="row-subtotal">$0.00</td>
+                </tr>
+                <tr data-name="Catpops" data-price="3.49">
+                    <td>Catpops</td>
+                    <td>Candy</td>
+                    <td>$3.49</td>
+                    <td><input type="number" class="qty-input" min="0" max="20" value="0" onchange="updateTotals()" oninput="updateTotals()"></td>
+                    <td class="row-subtotal">$0.00</td>
+                </tr>
+                <tr data-name="Paw-berry Cheesecake" data-price="6.49">
+                    <td>Paw-berry Cheesecake</td>
+                    <td>Dessert</td>
+                    <td>$6.49</td>
+                    <td><input type="number" class="qty-input" min="0" max="20" value="0" onchange="updateTotals()" oninput="updateTotals()"></td>
+                    <td class="row-subtotal">$0.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">Grand Total</th>
+                    <th id="grand-total">$0.00</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button onclick="confirmOrder()">Confirm Order</button>
+    </main>
+
+    <footer>
+        <p><strong>MeowBakhsh Cafe</strong> | F-7 Markaz, Islamabad</p>
+        <p>Created by Meerab (26i-3160) — IICT Lab Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
